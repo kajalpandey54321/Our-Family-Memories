@@ -1,0 +1,1111 @@
+/* /* =========================================
+   OUR BOND SECTION
+========================================= */
+
+/* .bond-section {
+
+    width: min(92%, 75rem);
+
+    margin-inline: auto;
+
+    padding:
+        clamp(4rem, 8vw, 7rem)
+        0;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(15rem, 0.9fr)
+        minmax(0, 0.8fr);
+
+    align-items: center;
+
+    gap:
+        clamp(2rem, 5vw, 5rem);
+
+    position: relative;
+} */
+
+
+/* =========================================
+   LEFT CONTENT
+========================================= */
+
+/* .bond-content {
+
+    max-width: 32rem;
+}
+
+
+.bond-content h2 {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(2.7rem, 5vw, 4.7rem);
+
+    line-height: 0.9;
+
+    color: #641329;
+
+    margin-block:
+        0.7rem 1.3rem;
+}
+
+
+.bond-content h2 span {
+
+    display: block;
+
+    color: #b12850;
+
+    font-style: italic;
+
+    margin-top: 0.3rem;
+}
+
+
+/* =========================================
+   DIVIDER
+========================================= */
+
+/* .bond-divider {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 0.6rem;
+
+    color: #c0445e;
+
+    margin-bottom: 1.5rem;
+}
+
+
+.bond-divider span {
+
+    width:
+        clamp(2rem, 5vw, 4rem);
+
+    height:
+        0.0625rem;
+
+    background: #d9a1af;
+} */
+
+
+/* =========================================
+   TEXT
+========================================= */
+
+.bond-text {
+
+    color: #76515e;
+
+    font-size:
+        clamp(0.8rem, 1.3vw, 0.95rem);
+
+    line-height: 1.85;
+
+    margin-bottom: 1rem;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.bond-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 0.7rem;
+
+    margin-top: 0.7rem;
+
+    padding:
+        clamp(0.7rem, 1.5vw, 0.9rem)
+        clamp(1rem, 2vw, 1.4rem);
+
+    border:
+        0.0625rem solid #b12850;
+
+    border-radius: 50rem;
+
+    color: #a20b3d;
+
+    font-size:
+        clamp(0.7rem, 1.2vw, 0.85rem);
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.bond-button:hover {
+
+    background: #a20b3d;
+
+    color: #ffffff;
+
+    transform:
+        translateY(-0.2rem);
+}
+
+
+.bond-button span {
+
+    font-size: 1rem;
+}
+
+
+/* =========================================
+   CENTER PHOTO
+========================================= */
+
+/* .bond-photo-wrapper {
+
+    position: relative;
+
+    width: min(100%, 24rem);
+
+    margin-inline: auto;
+
+    padding: 0.8rem;
+}
+
+
+.bond-photo {
+
+    position: relative;
+
+    width: 100%; */
+
+    /* aspect-ratio: 0.82; */
+/* 
+    padding: 0.7rem;
+
+    background: #ffffff;
+
+    box-shadow:
+        0
+        0.8rem
+        2rem
+        rgba(80, 20, 40, 0.15);
+
+    transform: rotate(3deg);
+
+    transition:
+        transform 0.4s ease;
+} */
+
+
+/* .bond-photo:hover {
+
+    transform:
+        rotate(0deg)
+        translateY(-0.5rem);
+}
+
+
+.bond-photo img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+} */
+
+
+/* =========================================
+   PHOTO DECORATION
+========================================= */
+
+/* .bond-photo-decoration { 
+
+    position: absolute;
+
+    top: -1rem;
+
+    right: -0.5rem;
+
+    width:
+        clamp(2.5rem, 6vw, 3.8rem);
+
+    aspect-ratio: 1;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: #ffd166;
+
+    color: #8e0d38;
+
+    font-size:
+        clamp(1.2rem, 3vw, 1.8rem);
+
+    z-index: 3;
+
+    box-shadow: 
+        0
+        0.4rem
+        1rem
+        rgba(80, 20, 40, 0.12);
+/* }* */
+
+
+/* =========================================
+   PHOTO CAPTION
+========================================= */
+
+/*.bond-photo-caption { 
+
+    position: absolute;
+
+    left: 50%;
+
+    bottom: -1.5rem;
+
+    transform:
+        translateX(-50%);
+
+    width: min(90%, 16rem);
+
+    padding:
+        0.8rem 1rem;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 0.5rem;
+
+    background: #ffffff;
+
+    box-shadow:
+        0
+        0.5rem
+        1.3rem
+        rgba(80, 20, 40, 0.12);
+
+    border-radius: 0.5rem;
+
+    z-index: 4;
+}
+
+
+.bond-photo-caption span {
+
+    color: #d51f55;
+
+    font-size: 1.2rem;
+}
+
+
+.bond-photo-caption p {
+
+    color: #76515e;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(0.85rem, 1.5vw, 1rem);
+
+    font-style: italic;
+
+    line-height: 1.3;
+}
+
+
+/* =========================================
+   STORY CARD
+========================================= */
+
+.bond-story {
+
+    padding:
+        clamp(1.5rem, 3vw, 2.2rem);
+
+    background:
+        linear-gradient(
+            145deg,
+            #fff1f4,
+            #fff9f9
+        );
+
+    border:
+        0.0625rem solid #f1d5de;
+
+    border-radius:
+        clamp(0.7rem, 2vw, 1rem);
+
+    box-shadow:
+        0
+        0.7rem
+        2rem
+        rgba(80, 20, 40, 0.06);
+
+    position: relative;
+}
+
+
+.story-icon {
+
+    width:
+        clamp(2.3rem, 5vw, 3rem);
+
+    aspect-ratio: 1;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: #f7d4dd;
+
+    color: #a20b3d;
+
+    font-size:
+        clamp(1rem, 2vw, 1.4rem);
+
+    margin-bottom: 1rem;
+}
+
+
+.story-label {
+
+    color: #b12850;
+
+    font-size:
+        clamp(0.6rem, 1vw, 0.75rem);
+
+    font-weight: 600;
+
+    letter-spacing:
+        clamp(0.08rem, 0.3vw, 0.18rem);
+}
+
+
+.bond-story h3 {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(2rem, 4vw, 3rem);
+
+    line-height: 0.95;
+
+    color: #641329;
+
+    margin-block:
+        0.5rem 1rem;
+}
+
+
+.bond-story h3 span {
+
+    display: block;
+
+    color: #b12850;
+
+    font-style: italic;
+}
+
+
+.bond-story > p:not(.story-label) {
+
+    color: #76515e;
+
+    font-size:
+        clamp(0.75rem, 1.2vw, 0.88rem);
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   SIGNATURE
+========================================= */
+
+.story-signature {
+
+    display: flex;
+
+    flex-direction: column;
+
+    margin-top: 1.5rem;
+
+    color: #9b6373;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(0.9rem, 1.5vw, 1rem);
+
+    font-style: italic;
+}
+
+
+.story-signature strong {
+
+    color: #a20b3d;
+
+    font-size:
+        clamp(1.1rem, 2vw, 1.4rem);
+
+    font-style: normal;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 62rem) {
+
+    .bond-section {
+
+        grid-template-columns:
+            1fr 1fr;
+
+        gap: 3rem;
+    }
+
+
+    .bond-story {
+
+        grid-column: 1 / -1;
+
+        width: min(100%, 40rem);
+
+        margin-inline: auto;
+    }
+
+
+    .bond-content {
+
+        max-width: 100%;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 43.75rem) {
+
+    .bond-section {
+
+        width: 90%;
+
+        grid-template-columns: 1fr;
+
+        gap: 3.5rem;
+
+        text-align: center;
+    }
+
+
+    .bond-content {
+
+        max-width: 35rem;
+
+        margin-inline: auto;
+    }
+
+
+    .bond-divider {
+
+        justify-content: center;
+    }
+
+
+    .bond-photo-wrapper {
+
+        width: min(100%, 22rem);
+
+        margin-top: 1rem;
+    }
+
+
+    .bond-story {
+
+        grid-column: auto;
+
+        text-align: center;
+
+        width: 100%;
+    }
+
+
+    .story-icon {
+
+        margin-inline: auto;
+    }
+
+
+    .story-signature {
+
+        align-items: center;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 28.125rem) {
+
+    .bond-section {
+
+        width: 92%;
+
+        padding-block: 3.5rem;
+
+        gap: 3rem;
+    }
+
+
+    .bond-photo-wrapper {
+
+        width: 90%;
+    }
+
+
+    .bond-photo-caption {
+
+        width: 90%;
+    }
+
+
+    .bond-story {
+
+        padding: 1.2rem;
+    }
+
+} */
+
+/* =========================================
+   OUR BOND
+========================================= */
+
+.bond-section {
+
+    width: min(90%, 72rem);
+
+    margin-inline: auto;
+
+    padding:
+        clamp(5rem, 10vw, 8rem)
+        0;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.bond-heading {
+
+    max-width: 45rem;
+
+    margin-inline: auto;
+
+    text-align: center;
+
+    margin-bottom:
+        clamp(3rem, 6vw, 5rem);
+}
+
+
+.bond-tag {
+
+    color: #b12850;
+
+    font-size:
+        clamp(0.6rem, 1vw, 0.75rem);
+
+    font-weight: 600;
+
+    letter-spacing:
+        clamp(0.12rem, 0.3vw, 0.2rem);
+}
+
+
+.bond-heading h2 {
+
+    margin-block:
+        0.7rem 1rem;
+
+    color: #641329;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(3rem, 6vw, 5rem);
+
+    line-height: 0.9;
+
+    font-weight: 500;
+}
+
+
+.bond-heading h2 span {
+
+    color: #b12850;
+
+    font-style: italic;
+}
+
+
+.bond-heading p {
+
+    max-width: 38rem;
+
+    margin-inline: auto;
+
+    color: #76515e;
+
+    font-size:
+        clamp(0.8rem, 1.3vw, 0.95rem);
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   MAIN
+========================================= */
+
+.bond-main {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 1fr);
+
+    align-items: center;
+
+    gap:
+        clamp(3rem, 8vw, 8rem);
+
+    max-width: 65rem;
+
+    margin-inline: auto;
+}
+
+
+/* =========================================
+   PHOTO
+========================================= */
+
+.bond-photo-box {
+
+    position: relative;
+
+    width: min(100%, 28rem);
+
+    margin-inline: auto;
+}
+
+
+.bond-photo {
+
+    position: relative;
+
+    width: 100%;
+
+    aspect-ratio: 0.85;
+
+    overflow: hidden;
+
+    border-radius:
+        12rem 12rem 1rem 1rem;
+
+    border:
+        0.5rem solid #ffffff;
+
+    box-shadow:
+        0
+        1rem
+        3rem
+        rgba(82, 24, 44, 0.15);
+}
+
+
+.bond-photo::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(70, 10, 30, 0.18),
+            transparent 40%
+        );
+}
+
+
+.bond-photo img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.6s ease;
+}
+
+
+.bond-photo:hover img {
+
+    transform: scale(1.05);
+}
+
+
+/* =========================================
+   DECORATIVE FLOWERS
+========================================= */
+
+.bond-flower {
+
+    position: absolute;
+
+    display: grid;
+
+    place-items: center;
+
+    color: #d99aaa;
+
+    font-size:
+        clamp(1.5rem, 4vw, 2.5rem);
+}
+
+
+.flower-one {
+
+    top: -1rem;
+
+    left: -1rem;
+
+    transform: rotate(-20deg);
+}
+
+
+.flower-two {
+
+    right: -1rem;
+
+    bottom: 2rem;
+
+    color: #e4b4c0;
+
+    transform: rotate(20deg);
+}
+
+
+/* =========================================
+   TEXT SIDE
+========================================= */
+
+.bond-text-box {
+
+    max-width: 32rem;
+}
+
+
+.bond-small-title {
+
+    color: #b12850;
+
+    font-size:
+        clamp(0.6rem, 1vw, 0.75rem);
+
+    letter-spacing:
+        0.15rem;
+
+    font-weight: 600;
+}
+
+
+.bond-text-box h3 {
+
+    margin-block:
+        0.8rem 1.3rem;
+
+    color: #641329;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(2.5rem, 5vw, 4rem);
+
+    line-height: 0.95;
+
+    font-weight: 500;
+}
+
+
+.bond-text-box h3 em {
+
+    display: block;
+
+    color: #b12850;
+
+    font-style: italic;
+}
+
+
+.bond-text-box > p {
+
+    color: #76515e;
+
+    font-size:
+        clamp(0.8rem, 1.3vw, 0.95rem);
+
+    line-height: 1.9;
+
+    margin-bottom: 1rem;
+}
+
+
+/* =========================================
+   QUOTE
+========================================= */
+
+.bond-quote {
+
+    position: relative;
+
+    margin-top: 2rem;
+
+    padding:
+        1.3rem
+        1.5rem
+        1.3rem
+        2.5rem;
+
+    border-left:
+        0.15rem solid #d99aaa;
+
+    background: #fff7f8;
+}
+
+
+.bond-quote > span {
+
+    position: absolute;
+
+    left: 0.5rem;
+
+    top: 0.4rem;
+
+    color: #d99aaa;
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size: 2rem;
+}
+
+
+.bond-quote p {
+
+    margin: 0;
+
+    color: #7a4a5a;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(1rem, 2vw, 1.25rem);
+
+    font-style: italic;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   SIGNATURE
+========================================= */
+
+.bond-sign {
+
+    display: flex;
+
+    flex-direction: column;
+
+    margin-top: 1.5rem;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-style: italic;
+
+    color: #9b6373;
+}
+
+
+.bond-sign strong {
+
+    margin-top: 0.2rem;
+
+    color: #a20b3d;
+
+    font-size:
+        clamp(1.2rem, 2.5vw, 1.6rem);
+
+    font-style: normal;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 50rem) {
+
+    .bond-main {
+
+        gap: 3rem;
+    }
+
+
+    .bond-photo-box {
+
+        width: min(100%, 22rem);
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 43.75rem) {
+
+    .bond-section {
+
+        width: 90%;
+
+        padding-block: 4rem;
+    }
+
+
+    .bond-main {
+
+        grid-template-columns: 1fr;
+
+        gap: 4rem;
+
+        text-align: center;
+    }
+
+
+    .bond-photo-box {
+
+        width: min(85%, 24rem);
+
+        order: 1;
+    }
+
+
+    .bond-text-box {
+
+        max-width: 35rem;
+
+        margin-inline: auto;
+
+        order: 2;
+    }
+
+
+    .bond-quote {
+
+        text-align: left;
+    }
+
+
+    .bond-sign {
+
+        align-items: center;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 28.125rem) {
+
+    .bond-section {
+
+        width: 92%;
+    }
+
+
+    .bond-photo-box {
+
+        width: 90%;
+    }
+
+
+    .bond-photo {
+
+        border-width: 0.35rem;
+
+        border-radius:
+            8rem 8rem 0.8rem 0.8rem;
+    }
+
+
+    .bond-quote {
+
+        padding-left: 2rem;
+    }
+
+}

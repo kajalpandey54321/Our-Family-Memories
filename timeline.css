@@ -1,0 +1,732 @@
+/* ==========================================
+   RESET
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #fffaf8;
+    color: #493535;
+    line-height: 1.6;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ==========================================
+   NAVBAR
+========================================== */
+
+.timeline-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(255, 250, 248, 0.96);
+
+    border-bottom: 1px solid #eadbd5;
+
+    backdrop-filter: blur(10px);
+}
+
+.timeline-navbar {
+    width: min(92%, 75rem);
+    min-height: 4.5rem;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 2rem;
+}
+
+.timeline-logo {
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    font-weight: bold;
+    color: #633f3f;
+}
+
+.timeline-logo span {
+    color: #b76e79;
+    font-size: 1.5rem;
+}
+
+.timeline-nav-links {
+    display: flex;
+    align-items: center;
+    gap: clamp(1rem, 2.5vw, 2rem);
+}
+
+.timeline-nav-links a {
+    position: relative;
+
+    color: #594747;
+    font-size: 0.95rem;
+
+    transition: 0.3s ease;
+}
+
+.timeline-nav-links a:hover,
+.timeline-nav-links a.active {
+    color: #a85f6c;
+}
+
+.timeline-nav-links a::after {
+    content: "";
+
+    position: absolute;
+
+    width: 0;
+    height: 2px;
+
+    left: 50%;
+    bottom: -0.4rem;
+
+    transform: translateX(-50%);
+
+    background: #a85f6c;
+
+    transition: 0.3s ease;
+}
+
+.timeline-nav-links a:hover::after,
+.timeline-nav-links a.active::after {
+    width: 100%;
+}
+
+
+/* ==========================================
+   HERO
+========================================== */
+
+.timeline-hero {
+    min-height: 85vh;
+
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 5rem 1.5rem;
+
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            #f9e8e5,
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 80% 70%,
+            #f5e1e7,
+            transparent 30%
+        ),
+        #fffaf8;
+}
+
+.timeline-hero-content {
+    max-width: 55rem;
+
+    position: relative;
+    z-index: 2;
+}
+
+.hero-small {
+    display: inline-block;
+
+    margin-bottom: 1.2rem;
+
+    color: #a45e6a;
+
+    font-size: 0.8rem;
+
+    letter-spacing: 0.25rem;
+}
+
+.timeline-hero h1 {
+    font-size: clamp(2.8rem, 7vw, 5.5rem);
+
+    line-height: 1.05;
+
+    color: #493535;
+}
+
+.timeline-hero h1 span {
+    display: block;
+
+    color: #a45e6a;
+
+    font-style: italic;
+}
+
+.timeline-hero p {
+    max-width: 40rem;
+
+    margin: 1.5rem auto 2rem;
+
+    color: #756565;
+
+    font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+.timeline-btn {
+    display: inline-flex;
+
+    align-items: center;
+    gap: 0.7rem;
+
+    padding: 0.9rem 1.5rem;
+
+    border-radius: 3rem;
+
+    background: #8f5964;
+    color: white;
+
+    font-size: 0.9rem;
+
+    transition: 0.3s ease;
+}
+
+.timeline-btn:hover {
+    transform: translateY(-3px);
+
+    background: #754651;
+}
+
+.timeline-btn span {
+    font-size: 1.2rem;
+}
+
+
+/* ==========================================
+   DECORATIONS
+========================================== */
+
+.timeline-decoration {
+    position: absolute;
+
+    color: #d7a8ae;
+
+    opacity: 0.5;
+}
+
+.flower-one {
+    top: 15%;
+    left: 8%;
+
+    font-size: 3rem;
+}
+
+.heart-one {
+    top: 25%;
+    right: 10%;
+
+    font-size: 3rem;
+}
+
+.star-one {
+    bottom: 20%;
+    left: 15%;
+
+    font-size: 2rem;
+}
+
+.flower-two {
+    bottom: 15%;
+    right: 12%;
+
+    font-size: 3rem;
+}
+
+
+/* ==========================================
+   INTRO
+========================================== */
+
+.timeline-intro {
+    width: min(90%, 55rem);
+
+    margin: auto;
+
+    padding: 6rem 1rem 4rem;
+
+    text-align: center;
+}
+
+.section-label {
+    display: block;
+
+    margin-bottom: 1rem;
+
+    color: #a45e6a;
+
+    font-size: 0.75rem;
+
+    letter-spacing: 0.25rem;
+
+    font-weight: bold;
+}
+
+.timeline-intro h2 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+
+    line-height: 1.15;
+}
+
+.timeline-intro h2 em {
+    color: #a45e6a;
+}
+
+.timeline-intro p {
+    max-width: 42rem;
+
+    margin: 1.5rem auto 0;
+
+    color: #756565;
+}
+
+
+/* ==========================================
+   TIMELINE MAIN
+========================================== */
+
+.family-timeline {
+    width: min(92%, 75rem);
+
+    margin: auto;
+
+    position: relative;
+
+    padding: 3rem 0 6rem;
+}
+
+
+/* CENTER LINE */
+
+.timeline-line {
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+
+    left: 50%;
+
+    width: 2px;
+
+    transform: translateX(-50%);
+
+    background: #dfc6c5;
+}
+
+
+/* ==========================================
+   TIMELINE ITEM
+========================================== */
+
+.timeline-item {
+    width: 50%;
+
+    position: relative;
+
+    padding: 2rem;
+}
+
+.timeline-item.left {
+    margin-right: auto;
+
+    padding-right: 4rem;
+}
+
+.timeline-item.right {
+    margin-left: auto;
+
+    padding-left: 4rem;
+}
+
+
+/* ==========================================
+   DOT
+========================================== */
+
+.timeline-dot {
+    position: absolute;
+
+    top: 3rem;
+
+    width: 3rem;
+    height: 3rem;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: #fffaf8;
+
+    border: 2px solid #d5a3aa;
+
+    color: #a45e6a;
+
+    font-size: 1.2rem;
+
+    z-index: 3;
+}
+
+.timeline-item.left .timeline-dot {
+    right: -1.5rem;
+}
+
+.timeline-item.right .timeline-dot {
+    left: -1.5rem;
+}
+
+.special-dot {
+    background: #a45e6a;
+
+    color: white;
+
+    border-color: #a45e6a;
+}
+
+
+/* ==========================================
+   TIMELINE CARD
+========================================== */
+
+.timeline-card {
+    overflow: hidden;
+
+    background: white;
+
+    border: 1px solid #eadbd5;
+
+    border-radius: 1.5rem;
+
+    box-shadow:
+        0 1rem 2.5rem rgba(82, 50, 50, 0.08);
+
+    transition: 0.35s ease;
+}
+
+.timeline-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 1.5rem 3rem rgba(82, 50, 50, 0.14);
+}
+
+.timeline-image {
+    height: 30rem;
+
+    overflow: hidden;
+}
+
+.timeline-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.5s ease;
+}
+
+.timeline-card:hover .timeline-image img {
+    transform: scale(1.05);
+}
+
+.timeline-content {
+    padding: 1.6rem;
+}
+
+.timeline-year {
+    color: #a45e6a;
+
+    font-size: 0.7rem;
+
+    letter-spacing: 0.2rem;
+
+    font-weight: bold;
+}
+
+.timeline-content h3 {
+    margin: 0.5rem 0 0.8rem;
+
+    color: #493535;
+
+    font-size: clamp(1.4rem, 3vw, 1.8rem);
+}
+
+.timeline-content p {
+    color: #6e6060;
+
+    font-size: 0.95rem;
+
+    line-height: 1.8;
+}
+
+
+/* ==========================================
+   RAKHI CARD
+========================================== */
+
+.rakhi-card {
+    border: 2px solid #d8a5ad;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #fff4f5
+        );
+}
+
+
+/* ==========================================
+   FUTURE SECTION
+========================================== */
+
+.future-section {
+    padding: 7rem 1.5rem;
+
+    text-align: center;
+
+    background: #f8e7e7;
+}
+
+.future-content {
+    width: min(92%, 55rem);
+
+    margin: auto;
+}
+
+.future-section h2 {
+    margin: 1rem 0;
+
+    font-size: clamp(2.3rem, 6vw, 4.5rem);
+
+    line-height: 1.1;
+
+    color: #493535;
+}
+
+.future-section h2 em {
+    display: block;
+
+    color: #a45e6a;
+}
+
+.future-section p {
+    max-width: 40rem;
+
+    margin: 1.5rem auto;
+
+    color: #6e6060;
+
+    font-size: 1.05rem;
+}
+
+.future-hearts {
+    margin-top: 2rem;
+
+    color: #a45e6a;
+
+    font-size: 1.5rem;
+}
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.timeline-footer {
+    padding: 2rem 1rem;
+
+    text-align: center;
+
+    background: #493535;
+
+    color: #f7e9e7;
+}
+
+.timeline-footer p {
+    margin: 0.3rem;
+
+    font-size: 0.9rem;
+}
+
+.timeline-footer span {
+    color: #e6a6af;
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 900px) {
+
+    .timeline-navbar {
+        padding: 0 1rem;
+    }
+
+    .timeline-nav-links {
+        gap: 1rem;
+    }
+
+    .timeline-nav-links a {
+        font-size: 0.85rem;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 700px) {
+
+    .timeline-navbar {
+        min-height: auto;
+
+        padding: 1rem 0;
+
+        flex-direction: column;
+
+        gap: 1rem;
+    }
+
+    .timeline-nav-links {
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 0.7rem 1rem;
+    }
+
+    .timeline-nav-links a {
+        font-size: 0.78rem;
+    }
+
+
+    .timeline-hero {
+        min-height: 75vh;
+
+        padding: 4rem 1rem;
+    }
+
+
+    .timeline-intro {
+        padding: 4rem 1rem 2rem;
+    }
+
+
+    /* TIMELINE MOBILE */
+
+    .family-timeline {
+        width: 92%;
+
+        padding-left: 1.5rem;
+    }
+
+    .timeline-line {
+        left: 0.7rem;
+
+        transform: none;
+    }
+
+    .timeline-item,
+    .timeline-item.left,
+    .timeline-item.right {
+        width: 100%;
+
+        margin: 0;
+
+        padding: 1.5rem 0 1.5rem 2rem;
+    }
+
+    .timeline-item.left .timeline-dot,
+    .timeline-item.right .timeline-dot {
+        left: -0.8rem;
+        right: auto;
+
+        top: 2rem;
+    }
+
+    .timeline-image {
+        height: 15rem;
+    }
+
+    .timeline-content {
+        padding: 1.3rem;
+    }
+
+    .timeline-content p {
+        font-size: 0.9rem;
+    }
+
+
+    .future-section {
+        padding: 5rem 1rem;
+    }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 450px) {
+
+    .timeline-logo {
+        font-size: 1.15rem;
+    }
+
+    .timeline-nav-links {
+        gap: 0.5rem 0.8rem;
+    }
+
+    .timeline-nav-links a {
+        font-size: 0.72rem;
+    }
+
+    .hero-small {
+        font-size: 0.65rem;
+
+        letter-spacing: 0.15rem;
+    }
+
+    .timeline-image {
+        height: 13rem;
+    }
+
+    .timeline-content {
+        padding: 1.1rem;
+    }
+
+}

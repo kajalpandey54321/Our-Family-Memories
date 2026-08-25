@@ -1,0 +1,3306 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #fff8f8;
+    color: #4b1728;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.header {
+    position: fixed;
+    inset: 0 0 auto 0;
+
+    width: 100%;
+
+    z-index: 1000;
+
+    background: rgba(99, 5, 35, 0.96);
+
+    backdrop-filter: blur(0.6rem);
+
+    border-bottom: 0.0625rem solid
+        rgba(255, 255, 255, 0.2);
+}
+
+.navbar {
+    width: min(92%, 75rem);
+
+    min-height: clamp(4rem, 6vw, 4.5rem);
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+/* LOGO */
+
+.logo {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(1.4rem, 3vw, 2rem);
+
+    font-weight: 700;
+
+    color: #ffffff;
+}
+
+.logo span {
+    margin-right: 0.4rem;
+}
+
+
+/* NAV MENU */
+
+.nav-menu {
+    display: flex;
+
+    align-items: center;
+
+    gap: clamp(0.8rem, 2vw, 2rem);
+
+    list-style: none;
+}
+
+.nav-menu a {
+    color: #ffffff;
+
+    font-size: clamp(0.75rem, 1.2vw, 0.9rem);
+
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #ffd166;
+}
+
+
+/* RIGHT HEART */
+
+.nav-heart {
+    color: #ffd166;
+
+    font-size: clamp(1rem, 2vw, 1.3rem);
+}
+
+
+/* HAMBURGER */
+
+.menu-btn {
+    display: none;
+
+    border: none;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: clamp(1.5rem, 5vw, 2rem);
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+
+    padding:
+        clamp(6rem, 10vw, 8rem)
+        5%
+        clamp(3rem, 6vw, 5rem);
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 1.1fr);
+
+    align-items: center;
+
+    gap: clamp(2rem, 5vw, 5rem);
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 10% 30%,
+            rgba(255, 130, 150, 0.3),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            135deg,
+            #650523,
+            #8e0d38,
+            #c0445e
+        );
+}
+
+
+/* HERO CONTENT */
+
+.hero-content {
+    width: min(100%, 38rem);
+
+    color: #ffffff;
+
+    z-index: 2;
+}
+
+
+/* SMALL TEXT */
+
+.hero-small-text {
+    font-size:
+        clamp(0.7rem, 1.5vw, 0.95rem);
+
+    letter-spacing:
+        clamp(0.03rem, 0.2vw, 0.1rem);
+
+    line-height: 1.6;
+
+    margin-bottom:
+        clamp(0.7rem, 2vw, 1rem);
+
+    color: #ffe5b4;
+}
+
+
+/* HERO HEADING */
+
+.hero h1 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size:
+        clamp(3.5rem, 8vw, 7rem);
+
+    line-height: 0.85;
+
+    font-weight: 600;
+
+    margin-bottom:
+        clamp(1.2rem, 3vw, 2rem);
+}
+
+
+/* RAKSHA BANDHAN */
+
+.hero h1 span {
+    display: block;
+
+    margin-top: 0.5rem;
+
+    color: #ffd166;
+
+    font-style: italic;
+
+    font-size:
+        clamp(2.8rem, 7vw, 6rem);
+
+    line-height: 0.95;
+}
+
+
+/* DESCRIPTION */
+
+.hero-description {
+    width: min(100%, 32rem);
+
+    font-size:
+        clamp(0.85rem, 1.5vw, 1.1rem);
+
+    line-height: 1.8;
+
+    margin-bottom:
+        clamp(1.3rem, 3vw, 2rem);
+
+    color: #fff0f3;
+}
+
+
+/* BUTTON */
+
+.hero-btn {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 0.6rem;
+
+    padding:
+        clamp(0.7rem, 2vw, 0.9rem)
+        clamp(1.1rem, 3vw, 1.6rem);
+
+    background: #d51f55;
+
+    color: #ffffff;
+
+    border-radius: 50rem;
+
+    font-size:
+        clamp(0.75rem, 1.5vw, 0.9rem);
+
+    transition: all 0.3s ease;
+
+    box-shadow:
+        0 0.5rem 1.25rem
+        rgba(0, 0, 0, 0.2);
+}
+
+.hero-btn:hover {
+    transform: translateY(-0.25rem);
+
+    background: #e52b63;
+}
+
+
+/* =========================
+   HERO IMAGE
+========================= */
+
+.hero-image {
+    position: relative;
+
+    width: 100%;
+
+    height:
+        min(100vh, 40rem);
+
+    overflow: hidden;
+
+    border-radius: 0.8rem;
+}
+
+.hero-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    border-radius: inherit;
+}
+
+
+/* IMAGE HEART */
+
+.hero-decoration {
+    position: absolute;
+
+    left: clamp(1rem, 3vw, 2rem);
+
+    bottom: clamp(1rem, 3vw, 2rem);
+
+    width:
+        clamp(3rem, 7vw, 4.5rem);
+
+    aspect-ratio: 1;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.9);
+
+    color: #a20b3d;
+
+    font-size:
+        clamp(1.4rem, 4vw, 2.5rem);
+
+    box-shadow:
+        0 0.6rem 1.8rem
+        rgba(0, 0, 0, 0.2);
+}
+/* ==============================
+   MEMORY VIDEO SECTION
+================================ */
+
+/* .memory-video-section {
+    width: 100%;
+    padding: clamp(3rem, 7vw, 6rem) 1rem;
+    background: linear-gradient(135deg, #fff5f7, #fffaf0);
+}
+
+.memory-video-container {
+    width: min(100%, 1100px);
+    margin: auto;
+    text-align: center;
+}
+
+.memory-video-heading span {
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+}
+
+.memory-video-heading h2 {
+    margin: 0.5rem 0;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    color: #8b2942;
+}
+
+.memory-video-heading p {
+    max-width: 650px;
+    margin: 0 auto 2rem;
+    padding: 0 0.5rem;
+    font-size: clamp(0.95rem, 2vw, 1.1rem);
+    line-height: 1.7;
+    color: #555;
+}
+
+/* Video Box */
+
+/* .memory-video-box {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 1.2rem;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+    background: #000;
+} 
+
+.memory-video-box video {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.memory-caption {
+    margin-top: 1.5rem;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    color: #8b2942;
+    font-weight: 500;
+} */
+
+/* Memory Video Section */
+.memory-video-section {
+    width: 100%;
+    padding: 4rem 1rem;
+    background: #fff5f8;
+}
+
+.memory-video-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.memory-video-heading span {
+    font-size: 2rem;
+}
+
+.memory-video-heading h2 {
+    margin: 0.5rem 0;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    color: #c2185b;
+}
+
+.memory-video-heading p {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    font-size: clamp(0.95rem, 2vw, 1.1rem);
+    line-height: 1.7;
+    color: #555;
+}
+
+/* Video Box */
+.memory-video-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 1rem;
+    background: #000;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Video */
+.memory-video-box video {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+
+    /* IMPORTANT: video crop nahi hoga */
+    object-fit: contain;
+}
+
+/* Caption */
+.memory-caption {
+    margin-top: 1.5rem;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    color: #c2185b;
+    font-style: italic;
+}
+
+
+/* =========================================
+   ABOUT OUR BOND
+========================================= */
+
+.bond-section {
+
+    width: min(92%, 80rem);
+
+    margin-inline: auto;
+
+    padding:
+        clamp(4rem, 8vw, 7rem)
+        0;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(12rem, 0.9fr)
+        minmax(18rem, 1.2fr)
+        minmax(14rem, 0.9fr);
+
+    align-items: center;
+
+    gap:
+        clamp(2rem, 4vw, 4rem);
+
+    background: #fff8f8;
+}
+
+
+/* =========================================
+   LEFT CONTENT
+========================================= */
+
+.bond-content {
+    max-width: 22rem;
+}
+
+.section-tag {
+
+    color: #b12850;
+
+    font-size:
+        clamp(0.65rem, 1vw, 0.8rem);
+
+    font-weight: 600;
+
+    letter-spacing:
+        clamp(0.1rem, 0.3vw, 0.2rem);
+
+    text-transform: uppercase;
+}
+
+
+.bond-content h2 {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size:
+        clamp(2.4rem, 4vw, 4rem);
+
+    line-height: 0.95;
+
+    color: #641329;
+
+    margin-block:
+        0.7rem 1rem;
+}
+
+
+.bond-content h2 span {
+
+    display: block;
+
+    color: #b12850;
+
+    font-style: italic;
+}
+
+
+/* DECORATIVE LINE */
+
+.bond-line {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 0.6rem;
+
+    color: #c0445e;
+
+    margin-bottom: 1.5rem;
+}
+
+
+.bond-line span {
+
+    width: clamp(2rem, 5vw, 4rem);
+
+    height: 0.0625rem;
+
+    background: #d98ba0;
+}
+
+
+.bond-content p {
+
+    font-size:
+        clamp(0.8rem, 1.3vw, 0.95rem);
+
+    line-height: 1.8;
+
+    color: #674651;
+
+    margin-bottom: 1rem;
+}
+
+
+/* =========================================
+   POLAROID SECTION
+========================================= */
+
+.bond-polaroids {
+
+    position: relative;
+
+    min-height: clamp(22rem, 35vw, 30rem);
+}
+
+
+/* POLAROID */
+
+.polaroid {
+
+    position: absolute;
+
+    width: clamp(8rem, 14vw, 12rem);
+
+    padding:
+        0.6rem
+        0.6rem
+        2.2rem;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 0.6rem 1.5rem
+        rgba(80, 20, 40, 0.15);
+
+    transition:
+        transform 0.4s ease,
+        z-index 0.4s ease;
+}
+
+
+.polaroid img {
+
+    width: 100%;
+
+    aspect-ratio: 0.82;
+
+    object-fit: cover;
+}
+
+
+.polaroid span {
+
+    position: absolute;
+
+    bottom: 0.6rem;
+
+    left: 0;
+
+    width: 100%;
+
+    text-align: center;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(0.8rem, 1.3vw, 1rem);
+
+    color: #641329;
+}
+
+
+/* FIRST PHOTO */
+
+.polaroid-one {
+
+    top: 5%;
+
+    left: 2%;
+
+    transform:
+        rotate(-7deg);
+}
+
+
+/* SECOND PHOTO */
+
+.polaroid-two {
+
+    top: 15%;
+
+    left: 30%;
+
+    transform:
+        rotate(5deg);
+
+    z-index: 2;
+}
+
+
+/* THIRD PHOTO */
+
+.polaroid-three {
+
+    top: 35%;
+
+    right: 0;
+
+    transform:
+        rotate(-6deg);
+
+    z-index: 1;
+}
+
+
+/* HOVER */
+
+.polaroid:hover {
+
+    z-index: 10;
+
+    transform:
+        rotate(0deg)
+        translateY(-0.8rem)
+        scale(1.05);
+}
+
+
+/* =========================================
+   MINI GALLERY
+========================================= */
+
+.mini-gallery {
+
+    width: 100%;
+}
+
+
+.mini-gallery-heading {
+
+    margin-bottom: 1rem;
+}
+
+
+.mini-gallery-heading h3 {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(1.8rem, 3vw, 2.5rem);
+
+    font-style: italic;
+
+    color: #a20b3d;
+}
+
+
+.mini-gallery-heading h3 span {
+
+    color: #d98ba0;
+}
+
+
+/* GRID */
+
+.mini-gallery-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: clamp(0.4rem, 1vw, 0.7rem);
+}
+
+
+/* PHOTOS */
+
+.mini-photo {
+
+    aspect-ratio: 1;
+
+    overflow: hidden;
+
+    border-radius:
+        clamp(0.3rem, 1vw, 0.6rem);
+}
+
+
+.mini-photo img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.4s ease;
+}
+
+
+.mini-photo:hover img {
+
+    transform: scale(1.1);
+}
+
+
+/* GALLERY BUTTON */
+
+.gallery-link {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 0.5rem;
+
+    margin-top: 1rem;
+
+    padding:
+        0.5rem 1rem;
+
+    border:
+        0.0625rem solid #d98ba0;
+
+    border-radius: 50rem;
+
+    color: #a20b3d;
+
+    font-size: 0.75rem;
+
+    transition: 0.3s ease;
+}
+
+
+.gallery-link:hover {
+
+    background: #a20b3d;
+
+    color: white;
+}
+/* =========================================
+   OUR MEMORIES SECTION
+========================================= */
+
+.memories-section {
+
+    width: min(92%, 75rem);
+
+    margin-inline: auto;
+
+    padding:
+        clamp(4rem, 8vw, 7rem)
+        0;
+
+    position: relative;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.memories-heading {
+
+    max-width: 45rem;
+
+    margin-inline: auto;
+
+    text-align: center;
+
+    margin-bottom:
+        clamp(3rem, 6vw, 5rem);
+}
+
+
+.memories-heading h2 {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(2.5rem, 5vw, 4.5rem);
+
+    line-height: 0.95;
+
+    color: #641329;
+
+    margin-block:
+        0.7rem 1.2rem;
+}
+
+
+.memories-heading h2 span {
+
+    display: block;
+
+    color: #b12850;
+
+    font-style: italic;
+}
+
+
+.memories-heading > p:last-child {
+
+    max-width: 35rem;
+
+    margin-inline: auto;
+
+    font-size:
+        clamp(0.8rem, 1.4vw, 1rem);
+
+    line-height: 1.8;
+
+    color: #76515e;
+}
+
+
+/* =========================================
+   MEMORY GRID
+========================================= */
+
+.memories-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap:
+        clamp(3rem, 7vw, 6rem)
+        clamp(2rem, 5vw, 5rem);
+
+    max-width: 65rem;
+
+    margin-inline: auto;
+}
+
+
+/* =========================================
+   MEMORY CARD
+========================================= */
+
+.memory-card {
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+}
+
+
+/* LEFT / RIGHT SLIGHT MOVEMENT */
+
+.memory-left {
+
+    transform: rotate(-2deg);
+}
+
+.memory-right {
+
+    transform: rotate(2deg);
+}
+
+
+/* =========================================
+   PHOTO
+========================================= */
+
+.memory-photo {
+
+    width: min(100%, 20rem);
+
+    aspect-ratio: 0.82;
+
+    padding:
+        clamp(0.5rem, 1vw, 0.8rem);
+
+    padding-bottom:
+        clamp(2.5rem, 4vw, 3.2rem);
+
+    background: #ffffff;
+
+    box-shadow:
+        0
+        0.7rem
+        2rem
+        rgba(80, 20, 40, 0.15);
+
+    position: relative;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+
+.memory-photo img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* HOVER */
+
+.memory-card:hover .memory-photo {
+
+    transform:
+        translateY(-0.7rem)
+        rotate(0deg);
+
+    box-shadow:
+        0
+        1.2rem
+        2.5rem
+        rgba(80, 20, 40, 0.22);
+}
+
+
+/* =========================================
+   MEMORY INFO
+========================================= */
+
+.memory-info {
+
+    width: min(90%, 18rem);
+
+    margin-top: -1.5rem;
+
+    padding:
+        1.2rem 1.3rem;
+
+    background: #ffffff;
+
+    border-radius:
+        0.5rem;
+
+    box-shadow:
+        0
+        0.5rem
+        1.5rem
+        rgba(80, 20, 40, 0.08);
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.memory-info span {
+
+    color: #c0445e;
+
+    font-size:
+        clamp(0.7rem, 1vw, 0.8rem);
+
+    font-weight: 600;
+}
+
+
+.memory-info h3 {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(1.5rem, 3vw, 2rem);
+
+    color: #641329;
+
+    margin-block:
+        0.3rem 0.4rem;
+}
+
+
+.memory-info p {
+
+    color: #76515e;
+
+    font-size:
+        clamp(0.7rem, 1.2vw, 0.85rem);
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   MEMORY DECORATIONS
+========================================= */
+
+.memory-card::before {
+
+    content: "♡";
+
+    position: absolute;
+
+    color: #e8a7b8;
+
+    font-size:
+        clamp(1.5rem, 4vw, 2.5rem);
+
+    z-index: 3;
+}
+
+
+.memory-left::before {
+
+    top: -1rem;
+
+    right: 5%;
+}
+
+
+.memory-right::before {
+
+    bottom: 5%;
+
+    left: 2%;
+
+    color: #d98ba0;
+}
+
+
+/* =========================================
+   BOTTOM MESSAGE
+========================================= */
+
+.memories-bottom {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 1rem;
+
+    max-width: 45rem;
+
+    margin:
+        clamp(4rem, 7vw, 6rem)
+        auto 0;
+
+    text-align: center;
+}
+
+
+.memories-bottom span {
+
+    color: #c0445e;
+
+    font-size:
+        clamp(1rem, 2vw, 1.5rem);
+}
+
+
+.memories-bottom p {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(1.2rem, 2.5vw, 1.7rem);
+
+    font-style: italic;
+
+    color: #641329;
+
+    line-height: 1.4;
+}
+
+/* =========================================
+   RAKHI CELEBRATION SECTION
+========================================= */
+
+.rakhi-section {
+
+    width: min(92%, 75rem);
+
+    margin-inline: auto;
+
+    padding:
+        clamp(4rem, 8vw, 7rem)
+        0;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 0.9fr)
+        minmax(0, 1.1fr);
+
+    align-items: center;
+
+    gap:
+        clamp(3rem, 7vw, 7rem);
+}
+
+
+/* =========================================
+   IMAGE SIDE
+========================================= */
+
+.rakhi-image-wrapper {
+
+    position: relative;
+
+    width: min(100%, 30rem);
+
+    margin-inline: auto;
+
+    padding: 1rem;
+}
+
+
+/* DECORATIVE CIRCLE */
+
+.rakhi-circle {
+
+    position: absolute;
+
+    width:
+        clamp(15rem, 30vw, 25rem);
+
+    aspect-ratio: 1;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f7d4dd,
+            #fbecef
+        );
+
+    top: 50%;
+
+    left: 50%;
+
+    transform:
+        translate(-50%, -50%);
+
+    z-index: -1;
+}
+
+
+/* RAKHI IMAGE */
+
+.rakhi-image {
+
+    width: min(100%, 26rem);
+
+    aspect-ratio: 0.82;
+
+    margin-inline: auto;
+
+    overflow: hidden;
+
+    border-radius:
+        50% 50% 0.8rem 0.8rem;
+
+    box-shadow:
+        0 1.2rem 3rem
+        rgba(80, 20, 40, 0.18);
+}
+
+
+.rakhi-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.6s ease;
+}
+
+
+.rakhi-image:hover img {
+
+    transform: scale(1.05);
+}
+
+
+/* =========================================
+   IMAGE BADGE
+========================================= */
+
+.rakhi-badge {
+
+    position: absolute;
+
+    right: 0;
+
+    bottom: 8%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 0.5rem;
+
+    padding:
+        0.7rem 1rem;
+
+    background: #ffffff;
+
+    color: #8e0d38;
+
+    border-radius: 50rem;
+
+    font-size:
+        clamp(0.7rem, 1.2vw, 0.85rem);
+
+    font-weight: 500;
+
+    box-shadow:
+        0 0.6rem 1.5rem
+        rgba(80, 20, 40, 0.12);
+}
+
+
+.rakhi-badge span {
+
+    color: #d51f55;
+
+    font-size: 1.2rem;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.rakhi-content {
+
+    width: 100%;
+}
+
+
+.rakhi-content h2 {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(2.7rem, 5vw, 4.5rem);
+
+    line-height: 0.95;
+
+    color: #641329;
+
+    margin-block:
+        0.7rem 1.5rem;
+}
+
+
+.rakhi-content h2 span {
+
+    display: block;
+
+    color: #b12850;
+
+    font-style: italic;
+}
+
+
+/* DESCRIPTION */
+
+.rakhi-description {
+
+    max-width: 38rem;
+
+    color: #76515e;
+
+    font-size:
+        clamp(0.8rem, 1.3vw, 0.95rem);
+
+    line-height: 1.8;
+
+    margin-bottom: 1rem;
+}
+
+
+/* =========================================
+   PROMISE GRID
+========================================= */
+
+.promise-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap:
+        clamp(0.7rem, 2vw, 1.2rem);
+
+    margin-top:
+        clamp(1.5rem, 3vw, 2.5rem);
+}
+
+
+/* PROMISE CARD */
+
+.promise-card {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 0.8rem;
+
+    padding:
+        clamp(0.8rem, 2vw, 1.2rem);
+
+    background: #fff5f7;
+
+    border:
+        0.0625rem solid #f3d8e0;
+
+    border-radius:
+        0.7rem;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.promise-card:hover {
+
+    transform: translateY(-0.3rem);
+
+    box-shadow:
+        0 0.7rem 1.5rem
+        rgba(80, 20, 40, 0.08);
+}
+
+
+/* ICON */
+
+.promise-icon {
+
+    flex-shrink: 0;
+
+    width:
+        clamp(2rem, 4vw, 2.5rem);
+
+    aspect-ratio: 1;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: #f7d4dd;
+
+    color: #a20b3d;
+
+    font-size:
+        clamp(0.9rem, 2vw, 1.2rem);
+}
+
+
+/* CARD HEADING */
+
+.promise-card h3 {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(1.1rem, 2vw, 1.4rem);
+
+    color: #641329;
+
+    line-height: 1.1;
+
+    margin-bottom: 0.3rem;
+}
+
+
+/* CARD TEXT */
+
+.promise-card p {
+
+    color: #76515e;
+
+    font-size:
+        clamp(0.65rem, 1vw, 0.78rem);
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   SIGNATURE
+========================================= */
+
+.rakhi-signature {
+
+    display: flex;
+
+    flex-direction: column;
+
+    margin-top:
+        clamp(1.5rem, 3vw, 2rem);
+
+    color: #9b6373;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(1rem, 2vw, 1.2rem);
+
+    font-style: italic;
+}
+
+
+.rakhi-signature strong {
+
+    color: #a20b3d;
+
+    font-size:
+        clamp(1.2rem, 2.5vw, 1.6rem);
+
+    font-style: normal;
+}
+/* =========================================
+   OUR FAMILY SECTION
+========================================= */
+
+.family-section {
+
+    width: min(92%, 75rem);
+
+    margin-inline: auto;
+
+    padding:
+        clamp(4rem, 8vw, 7rem)
+        0;
+
+    position: relative;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.family-heading {
+
+    max-width: 45rem;
+
+    margin-inline: auto;
+
+    text-align: center;
+
+    margin-bottom:
+        clamp(3rem, 6vw, 5rem);
+}
+
+
+.family-heading h2 {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(2.5rem, 5vw, 4.5rem);
+
+    line-height: 0.95;
+
+    color: #641329;
+
+    margin-block:
+        0.7rem 1.2rem;
+}
+
+
+.family-heading h2 span {
+
+    display: block;
+
+    color: #b12850;
+
+    font-style: italic;
+}
+
+
+.family-heading > p:last-child {
+
+    max-width: 35rem;
+
+    margin-inline: auto;
+
+    color: #76515e;
+
+    font-size:
+        clamp(0.8rem, 1.4vw, 1rem);
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   FAMILY GRID
+========================================= */
+
+.family-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    align-items: start;
+
+    gap:
+        clamp(1rem, 2.5vw, 2rem);
+
+    max-width: 70rem;
+
+    margin-inline: auto;
+}
+
+
+/* =========================================
+   FAMILY CARD
+========================================= */
+
+.family-card {
+
+    background: #ffffff;
+
+    border-radius:
+        0.7rem;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 0.6rem 1.8rem
+        rgba(80, 20, 40, 0.1);
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+
+/* SECOND & FOURTH CARD UP */
+
+.family-card-up {
+
+    transform:
+        translateY(-1.5rem);
+}
+
+
+.family-card:hover {
+
+    transform:
+        translateY(-0.7rem);
+
+    box-shadow:
+        0 1.2rem 2.5rem
+        rgba(80, 20, 40, 0.16);
+}
+
+
+/* =========================================
+   PHOTO
+========================================= */
+
+.family-photo {
+
+    position: relative;
+
+    width: 100%;
+
+    aspect-ratio: 0.82;
+
+    overflow: hidden;
+
+    background: #f7d4dd;
+}
+
+
+.family-photo img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.6s ease;
+}
+
+
+.family-card:hover .family-photo img {
+
+    transform: scale(1.06);
+}
+
+
+/* NUMBER */
+
+.family-number {
+
+    position: absolute;
+
+    top: 0.8rem;
+
+    right: 0.8rem;
+
+    width:
+        clamp(2rem, 4vw, 2.5rem);
+
+    aspect-ratio: 1;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255, 255, 255, 0.9);
+
+    color: #a20b3d;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(0.9rem, 2vw, 1.1rem);
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   FAMILY INFO
+========================================= */
+
+.family-info {
+
+    padding:
+        clamp(1rem, 2vw, 1.4rem);
+}
+
+
+.family-role {
+
+    color: #c0445e;
+
+    font-size:
+        clamp(0.55rem, 1vw, 0.7rem);
+
+    font-weight: 600;
+
+    letter-spacing:
+        clamp(0.08rem, 0.2vw, 0.15rem);
+}
+
+
+.family-info h3 {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(1.5rem, 3vw, 2rem);
+
+    color: #641329;
+
+    margin-block:
+        0.3rem 0.5rem;
+}
+
+
+.family-info p {
+
+    color: #76515e;
+
+    font-size:
+        clamp(0.65rem, 1vw, 0.8rem);
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   FAMILY MESSAGE
+========================================= */
+
+.family-message {
+
+    width: min(100%, 50rem);
+
+    margin:
+        clamp(4rem, 7vw, 6rem)
+        auto 0;
+
+    padding:
+        clamp(1.5rem, 4vw, 2.5rem);
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff0f4,
+            #fff8f8
+        );
+
+    border:
+        0.0625rem solid #f2d5df;
+
+    border-radius:
+        0.8rem;
+}
+
+
+.family-message-icon {
+
+    color: #c0445e;
+
+    font-size:
+        clamp(1.5rem, 4vw, 2.5rem);
+
+    margin-bottom: 0.5rem;
+}
+
+
+.family-message p {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(1.2rem, 2.5vw, 1.7rem);
+
+    font-style: italic;
+
+    color: #641329;
+
+    line-height: 1.4;
+}
+   LETTER FROM MY HEART
+========================================= */
+
+.letter-section {
+
+    width: min(92%, 75rem);
+
+    margin-inline: auto;
+
+    padding:
+        clamp(4rem, 8vw, 7rem)
+        0;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.letter-container {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 0.8fr)
+        minmax(0, 1.2fr);
+
+    align-items: center;
+
+    gap:
+        clamp(2.5rem, 6vw, 6rem);
+
+    padding:
+        clamp(1.5rem, 4vw, 3.5rem);
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff1f4,
+            #fffaf8
+        );
+
+    border:
+        0.0625rem solid #f0d5de;
+
+    border-radius:
+        clamp(0.8rem, 2vw, 1.5rem);
+
+    box-shadow:
+        0
+        1rem
+        3rem
+        rgba(80, 20, 40, 0.08);
+}
+
+
+/* =========================================
+   PHOTO
+========================================= */
+
+.letter-photo {
+
+    position: relative;
+
+    width: min(100%, 25rem);
+
+    margin-inline: auto;
+
+    padding:
+        clamp(0.7rem, 1.5vw, 1rem);
+
+    background: #ffffff;
+
+    box-shadow:
+        0
+        0.8rem
+        2rem
+        rgba(80, 20, 40, 0.14);
+
+    transform: rotate(-3deg);
+
+    transition:
+        transform 0.4s ease;
+}
+
+
+.letter-photo:hover {
+
+    transform:
+        rotate(0deg)
+        translateY(-0.5rem);
+}
+
+
+.letter-photo-frame {
+
+    width: 100%;
+
+    aspect-ratio: 0.82;
+
+    overflow: hidden;
+}
+
+
+.letter-photo-frame img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* PHOTO NOTE */
+
+.letter-photo-note {
+
+    padding:
+        0.8rem
+        0.5rem
+        0.3rem;
+
+    text-align: center;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(0.8rem, 1.5vw, 1rem);
+
+    font-style: italic;
+
+    color: #76515e;
+}
+
+
+/* =========================================
+   LETTER CONTENT
+========================================= */
+
+.letter-content {
+
+    width: 100%;
+
+    max-width: 42rem;
+}
+
+
+/* TOP */
+
+.letter-top {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 0.5rem;
+}
+
+
+.letter-small {
+
+    color: #b12850;
+
+    font-size:
+        clamp(0.6rem, 1vw, 0.75rem);
+
+    font-weight: 600;
+
+    letter-spacing:
+        clamp(0.08rem, 0.3vw, 0.18rem);
+}
+
+
+.letter-heart {
+
+    color: #d51f55;
+
+    font-size:
+        clamp(1.2rem, 3vw, 1.8rem);
+}
+
+
+/* HEADING */
+
+.letter-content h2 {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(2.5rem, 5vw, 4.5rem);
+
+    line-height: 0.9;
+
+    color: #641329;
+
+    margin-block:
+        0.5rem 1rem;
+}
+
+
+.letter-content h2 span {
+
+    display: block;
+
+    color: #b12850;
+
+    font-style: italic;
+}
+
+
+/* =========================================
+   DECORATIVE LINE
+========================================= */
+
+.letter-line {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 0.6rem;
+
+    color: #c0445e;
+
+    margin-bottom:
+        clamp(1.5rem, 3vw, 2rem);
+}
+
+
+.letter-line span {
+
+    width:
+        clamp(2rem, 7vw, 5rem);
+
+    height:
+        0.0625rem;
+
+    background: #d9a1af;
+}
+
+
+/* =========================================
+   LETTER TEXT
+========================================= */
+
+.letter-text {
+
+    color: #674651;
+
+    font-size:
+        clamp(0.8rem, 1.3vw, 0.95rem);
+
+    line-height: 1.85;
+}
+
+
+.letter-text p {
+
+    margin-bottom: 1rem;
+}
+
+
+.letter-text p:first-child {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(1.2rem, 2.5vw, 1.5rem);
+
+    color: #641329;
+
+    font-weight: 600;
+}
+
+
+.letter-final {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(1.2rem, 2.5vw, 1.6rem);
+
+    color: #a20b3d;
+
+    font-style: italic;
+
+    margin-top: 1.5rem;
+}
+
+
+/* =========================================
+   SIGNATURE
+========================================= */
+
+.letter-signature {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    margin-top:
+        clamp(1.5rem, 3vw, 2rem);
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(1rem, 2vw, 1.2rem);
+
+    font-style: italic;
+
+    color: #9b6373;
+}
+
+
+.letter-signature strong {
+
+    color: #a20b3d;
+
+    font-size:
+        clamp(1.3rem, 3vw, 1.7rem);
+
+    font-style: normal;
+}
+
+
+/* =========================================
+   DECORATIONS
+========================================= */
+
+.letter-container::before {
+
+    content: "✦";
+
+    position: absolute;
+
+    color: #e2a5b5;
+
+    font-size:
+        clamp(1.5rem, 4vw, 2.5rem);
+
+    transform:
+        translate(
+            -50%,
+            -50%
+        );
+}
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding:
+        clamp(3.5rem, 7vw, 5.5rem)
+        5%
+        clamp(1.5rem, 3vw, 2rem);
+
+    background:
+        linear-gradient(
+            135deg,
+            #56051f,
+            #72072d,
+            #92113f
+        );
+
+    color: #ffffff;
+}
+
+
+/* =========================================
+   DECORATIVE HEART
+========================================= */
+
+.footer-decoration {
+
+    position: absolute;
+
+    top: -3rem;
+
+    left: 50%;
+
+    transform:
+        translateX(-50%);
+
+    width:
+        clamp(7rem, 15vw, 11rem);
+
+    aspect-ratio: 1;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255, 255, 255, 0.05);
+
+    color:
+        rgba(255, 209, 102, 0.7);
+
+    font-size:
+        clamp(3rem, 7vw, 5rem);
+}
+
+
+/* =========================================
+   FOOTER CONTENT
+========================================= */
+
+.footer-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: min(100%, 75rem);
+
+    margin-inline: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1.2fr 0.7fr 1fr;
+
+    gap:
+        clamp(2rem, 5vw, 5rem);
+}
+
+
+/* =========================================
+   BRAND
+========================================= */
+
+.footer-logo {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(2rem, 4vw, 3rem);
+
+    font-weight: 600;
+
+    margin-bottom: 0.8rem;
+}
+
+
+.footer-logo span {
+
+    color: #ffd166;
+}
+
+
+.footer-brand p {
+
+    max-width: 20rem;
+
+    color:
+        rgba(255, 255, 255, 0.72);
+
+    font-size:
+        clamp(0.75rem, 1.3vw, 0.9rem);
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   LINKS
+========================================= */
+
+.footer-links {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 0.5rem;
+}
+
+
+.footer-links h3 {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(1.3rem, 2.5vw, 1.7rem);
+
+    color: #ffd166;
+
+    margin-bottom: 0.4rem;
+}
+
+
+.footer-links a {
+
+    width: fit-content;
+
+    color:
+        rgba(255, 255, 255, 0.72);
+
+    font-size:
+        clamp(0.7rem, 1.2vw, 0.85rem);
+
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.footer-links a:hover {
+
+    color: #ffffff;
+
+    transform:
+        translateX(0.3rem);
+}
+
+
+/* =========================================
+   MESSAGE
+========================================= */
+
+.footer-message {
+
+    text-align: center;
+
+    align-self: center;
+}
+
+
+.footer-small {
+
+    display: block;
+
+    margin-bottom: 0.8rem;
+
+    color: #ffd166;
+
+    font-size:
+        clamp(0.6rem, 1vw, 0.75rem);
+
+    letter-spacing:
+        clamp(0.08rem, 0.3vw, 0.2rem);
+
+    font-weight: 600;
+}
+
+
+.footer-message h3 {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(1.8rem, 4vw, 2.8rem);
+
+    line-height: 1;
+
+    font-weight: 500;
+}
+
+
+.footer-message h3 span {
+
+    display: block;
+
+    color: #ffd166;
+
+    font-style: italic;
+
+    margin-top: 0.3rem;
+}
+
+
+.footer-hearts {
+
+    margin-top: 1.2rem;
+
+    color: #ffd166;
+
+    font-size:
+        clamp(1rem, 2vw, 1.4rem);
+
+    letter-spacing: 0.5rem;
+}
+
+
+/* =========================================
+   DIVIDER
+========================================= */
+
+.footer-divider {
+
+    width: min(100%, 75rem);
+
+    height: 0.0625rem;
+
+    margin:
+        clamp(2.5rem, 5vw, 4rem)
+        auto
+        1.5rem;
+
+    background:
+        rgba(255, 255, 255, 0.15);
+}
+
+
+/* =========================================
+   BOTTOM
+========================================= */
+
+.footer-bottom {
+
+    width: min(100%, 75rem);
+
+    margin-inline: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 1rem;
+
+    color:
+        rgba(255, 255, 255, 0.6);
+
+    font-size:
+        clamp(0.65rem, 1.2vw, 0.8rem);
+}
+
+
+.footer-bottom p {
+
+    margin: 0;
+}
+
+
+.footer-bottom span {
+
+    color: #ff6b8a;
+
+    font-size: 1rem;
+}
+
+
+/* =========================================
+   BACK TO TOP
+========================================= */
+
+.back-to-top {
+
+    position: absolute;
+
+    right: 5%;
+
+    bottom: 4.5rem;
+
+    width:
+        clamp(2.3rem, 5vw, 3rem);
+
+    aspect-ratio: 1;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: #ffd166;
+
+    color: #650523;
+
+    font-size:
+        clamp(1rem, 2vw, 1.3rem);
+
+    font-weight: 600;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
+}
+
+
+.back-to-top:hover {
+
+    transform:
+        translateY(-0.3rem);
+
+    background: #ffffff;
+}
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 56.25rem) {
+
+    .nav-heart {
+        display: none;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+        padding-top:
+            clamp(7rem, 12vw, 9rem);
+    }
+
+    .hero-content {
+        margin-inline: auto;
+    }
+
+    .hero-description {
+        margin-inline: auto;
+    }
+
+    .hero-image {
+        width: min(100%, 40rem);
+
+        height:
+            clamp(25rem, 60vw, 35rem);
+
+        margin-inline: auto;
+    }
+    .bond-section {
+
+        width: 90%;
+
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+        gap: 2.5rem;
+    }
+
+
+    .bond-content {
+
+        max-width: 35rem;
+
+        margin-inline: auto;
+    }
+
+
+    .bond-line {
+
+        justify-content: center;
+    }
+
+
+    /* POLAROIDS */
+
+    .bond-polaroids {
+
+        width: 100%;
+
+        min-height:
+            clamp(20rem, 80vw, 25rem);
+
+        max-width: 30rem;
+
+        margin-inline: auto;
+    }
+
+
+    .polaroid {
+
+        width:
+            clamp(7.5rem, 32vw, 10rem);
+    }
+
+
+    .polaroid-one {
+
+        left: 0;
+
+        top: 5%;
+    }
+
+
+    .polaroid-two {
+
+        left: 32%;
+
+        top: 12%;
+    }
+
+
+    .polaroid-three {
+
+        right: 0;
+
+        top: 30%;
+    }
+
+
+    /* GALLERY */
+
+    .mini-gallery {
+
+        width: 100%;
+    }
+
+
+    .mini-gallery-heading {
+
+        text-align: center;
+    }
+     .bond-section {
+
+        grid-template-columns:
+            1fr 1fr;
+
+        gap: 3rem;
+    }
+
+
+    .bond-content {
+
+        max-width: 100%;
+    }
+
+
+    .mini-gallery {
+
+        grid-column: 1 / -1;
+
+        width: min(100%, 35rem);
+
+        margin-inline: auto;
+    }
+
+
+    .bond-polaroids {
+
+        min-height: 28rem;
+    }
+       .memories-grid {
+
+        gap:
+            3rem
+            2rem;
+    }
+
+
+    .memory-photo {
+
+        width:
+            min(100%, 18rem);
+    }
+      .rakhi-section {
+
+        grid-template-columns:
+            1fr 1fr;
+
+        gap: 2.5rem;
+    }
+
+
+    .rakhi-image-wrapper {
+
+        width: 100%;
+    }
+
+
+    .rakhi-badge {
+
+        right: -0.5rem;
+    }
+     .family-grid {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        width: min(100%, 45rem);
+
+        margin-inline: auto;
+    }
+
+    .family-card-up {
+
+        transform: none;
+    }
+    .letter-container {
+
+        grid-template-columns:
+            minmax(0, 0.9fr)
+            minmax(0, 1.1fr);
+
+        gap: 2.5rem;
+    }
+
+
+    .letter-photo {
+
+        width: 90%;
+    }
+     .footer-content {
+
+        grid-template-columns:
+            1fr 1fr;
+
+        gap: 2.5rem;
+    }
+
+
+    .footer-message {
+
+        grid-column: 1 / -1;
+
+        padding-top: 1rem;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 43.75rem) {
+
+    /* NAVBAR */
+
+    .navbar {
+        width: 90%;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-menu {
+
+        position: absolute;
+
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+
+        padding:
+            0.5rem 5% 1rem;
+
+        background: #650523;
+
+        display: none;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 0;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu li {
+        width: 100%;
+
+        padding: 0.75rem 0;
+
+        border-bottom:
+            0.0625rem solid
+            rgba(255, 255, 255, 0.15);
+    }
+
+    .nav-menu a {
+        display: block;
+
+        width: 100%;
+
+        font-size: 0.9rem;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        padding:
+            clamp(6rem, 18vw, 7rem)
+            6%
+            3rem;
+
+        gap: clamp(2rem, 8vw, 3rem);
+    }
+
+    .hero h1 {
+        font-size:
+            clamp(3rem, 15vw, 4.5rem);
+    }
+
+    .hero h1 span {
+        font-size:
+            clamp(2.4rem, 12vw, 3.8rem);
+    }
+
+    .hero-image {
+        height:
+            clamp(20rem, 100vw, 30rem);
+    }
+     .rakhi-section {
+
+        width: 90%;
+
+        grid-template-columns: 1fr;
+
+        gap: 3rem;
+
+        text-align: center;
+    }
+
+
+    .rakhi-image-wrapper {
+
+        width: min(100%, 25rem);
+
+        order: 1;
+    }
+
+
+    .rakhi-content {
+
+        order: 2;
+    }
+
+
+    .rakhi-description {
+
+        margin-inline: auto;
+    }
+
+
+    .promise-grid {
+
+        text-align: left;
+    }
+
+
+    .rakhi-signature {
+
+        align-items: center;
+    }
+
+
+    .rakhi-badge {
+
+        right: 0;
+
+        bottom: 5%;
+    }
+      .family-section {
+
+        width: 90%;
+    }
+
+
+    .family-grid {
+
+        grid-template-columns: 1fr;
+
+        width: min(100%, 25rem);
+
+        gap: 2rem;
+    }
+
+
+    .family-card {
+
+        width: 100%;
+    }
+
+
+    .family-photo {
+
+        aspect-ratio: 1 / 1.05;
+    }
+
+
+    .family-message {
+
+        margin-top: 3rem;
+    }
+     .footer {
+
+        padding-inline: 7%;
+    }
+
+
+    .footer-content {
+
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+        gap: 2.5rem;
+    }
+
+
+    .footer-brand p {
+
+        margin-inline: auto;
+    }
+
+
+    .footer-links {
+
+        align-items: center;
+    }
+
+
+    .footer-links a:hover {
+
+        transform: none;
+    }
+
+
+    .footer-message {
+
+        grid-column: auto;
+    }
+
+
+    .footer-bottom {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 0.5rem;
+    }
+
+
+    .back-to-top {
+
+        position: relative;
+
+        right: auto;
+
+        bottom: auto;
+
+        margin:
+            1.5rem
+            auto
+            0;
+    }
+     /* .memory-video-section {
+        padding: 2.8rem 0.8rem;
+    }
+
+    .memory-video-box {
+        border-radius: 0.8rem;
+    }
+
+    .memory-video-heading p {
+        line-height: 1.6;
+    }
+
+    .memory-caption {
+        padding: 0 0.5rem;
+    } */
+
+     .memory-video-section {
+        padding: 3rem 0.7rem;
+    }
+
+    .memory-video-box {
+        border-radius: 0.7rem;
+    }
+
+    .memory-video-box video {
+        width: 100%;
+        height: auto;
+    }
+
+    .memory-caption {
+        padding: 0 0.5rem;
+    }
+
+}
+
+
+/* =========================
+   VERY SMALL MOBILE
+========================= */
+
+@media (max-width: 28.125rem) {
+
+    .hero {
+        padding-inline: 5%;
+    }
+
+    .hero h1 {
+        font-size:
+            clamp(2.7rem, 15vw, 3.7rem);
+    }
+
+    .hero h1 span {
+        font-size:
+            clamp(2.2rem, 12vw, 3.2rem);
+    }
+
+    .hero-description {
+        font-size: 0.85rem;
+
+        line-height: 1.7;
+    }
+
+    .hero-image {
+        height:
+            clamp(18rem, 95vw, 22rem);
+    }
+     .bond-section {
+
+        width: 92%;
+    }
+
+
+    .bond-polaroids {
+
+        min-height: 19rem;
+    }
+
+
+    .polaroid {
+
+        width:
+            clamp(6.8rem, 31vw, 8.5rem);
+
+        padding:
+            0.4rem
+            0.4rem
+            1.8rem;
+    }
+
+
+    .polaroid span {
+
+        font-size: 0.7rem;
+    }
+
+
+    .mini-gallery-grid {
+
+        gap: 0.4rem;
+    }
+    .memories-section {
+
+        padding-block:
+            3.5rem;
+    }
+
+
+    .memories-grid {
+
+        gap: 3rem;
+    }
+
+
+    .memory-photo {
+
+        width: 85%;
+
+        padding-bottom: 2.5rem;
+    }
+
+
+    .memory-info {
+
+        width: 82%;
+
+        padding: 1rem;
+    }
+     .rakhi-section {
+
+        width: 92%;
+
+        gap: 2.5rem;
+    }
+
+
+    .rakhi-image-wrapper {
+
+        padding: 0.5rem;
+    }
+
+
+    .rakhi-image {
+
+        width: 90%;
+    }
+
+
+    .rakhi-badge {
+
+        padding:
+            0.5rem 0.8rem;
+
+        font-size: 0.65rem;
+    }
+
+
+    .promise-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 0.7rem;
+    }
+
+
+    .promise-card {
+
+        padding: 0.8rem;
+    }
+
+    .family-section {
+
+        width: 92%;
+
+        padding-block: 3.5rem;
+    }
+
+
+    .family-grid {
+
+        width: 100%;
+
+        gap: 1.5rem;
+    }
+
+
+    .family-info {
+
+        padding: 1rem;
+    }
+
+
+    .family-message {
+
+        padding: 1.3rem;
+    }
+
+    .letter-section {
+
+        width: 92%;
+
+        padding-block: 3.5rem;
+    }
+
+
+    .letter-container {
+
+        padding: 1rem;
+
+        gap: 2rem;
+    }
+
+
+    .letter-photo {
+
+        width: 90%;
+    }
+
+
+    .letter-text {
+
+        font-size: 0.8rem;
+
+        line-height: 1.75;
+    }
+     .footer {
+
+        padding-top: 3.5rem;
+    }
+
+
+    .footer-decoration {
+
+        top: -2.5rem;
+    }
+
+
+    .footer-content {
+
+        gap: 2rem;
+    }
+
+}

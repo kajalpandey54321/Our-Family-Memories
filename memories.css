@@ -1,0 +1,1042 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    background: #fffaf8;
+
+    color: #641329;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+}
+
+
+img {
+
+    display: block;
+
+    width: 100%;
+
+}
+
+
+a {
+
+    text-decoration: none;
+
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.memory-header {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    z-index: 10;
+}
+
+
+.memory-nav {
+
+    width: min(90%, 75rem);
+
+    margin-inline: auto;
+
+    padding:
+        1.3rem 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+.memory-logo {
+
+    color: #ffffff;
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size:
+        clamp(1.3rem, 3vw, 1.8rem);
+}
+
+
+.memory-logo span {
+
+    color: #ffd166;
+
+}
+
+
+.memory-links {
+
+    display: flex;
+
+    gap:
+        clamp(1rem, 3vw, 2rem);
+}
+
+
+.memory-links a {
+
+    color:
+        rgba(255,255,255,0.8);
+
+    font-size:
+        clamp(0.7rem, 1.2vw, 0.85rem);
+
+    transition:
+        color 0.3s ease;
+}
+
+
+.memory-links a:hover,
+.memory-links .active {
+
+    color: #ffd166;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.memory-hero {
+
+    min-height:
+        min(90vh, 50rem);
+
+    display: grid;
+
+    place-items: center;
+
+    text-align: center;
+
+    padding:
+        7rem 5% 4rem;
+
+    background:
+        linear-gradient(
+            rgba(77, 5, 28, 0.65),
+            rgba(112, 7, 45, 0.72)
+        ),
+        url("images/memory7.jpg")
+        center / cover no-repeat;
+}
+
+
+.memory-hero-content {
+
+    max-width: 55rem;
+
+    color: #ffffff;
+}
+
+
+.memory-label {
+
+    font-size:
+        clamp(0.6rem, 1vw, 0.75rem);
+
+    letter-spacing:
+        0.2rem;
+
+    color: #ffd166;
+
+    font-weight: 600;
+}
+
+
+.memory-hero h1 {
+
+    margin-block:
+        1rem 1.2rem;
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size:
+        clamp(3.5rem, 8vw, 7rem);
+
+    line-height: 0.85;
+
+    font-weight: 400;
+}
+
+
+.memory-hero h1 span {
+
+    display: block;
+
+    color: #ffd166;
+
+    font-style: italic;
+}
+
+
+.memory-hero p {
+
+    max-width: 35rem;
+
+    margin-inline: auto;
+
+    color:
+        rgba(255,255,255,0.85);
+
+    font-size:
+        clamp(0.85rem, 1.5vw, 1rem);
+
+    line-height: 1.8;
+}
+
+
+.memory-scroll {
+
+    margin-top: 3rem;
+
+    color:
+        rgba(255,255,255,0.7);
+
+    font-size:
+        clamp(0.65rem, 1vw, 0.8rem);
+
+    letter-spacing: 0.1rem;
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.memory-intro {
+
+    width: min(90%, 48rem);
+
+    margin-inline: auto;
+
+    padding:
+        clamp(5rem, 10vw, 8rem)
+        0;
+
+    text-align: center;
+}
+
+
+.memory-intro > span,
+.polaroid-heading > span,
+.timeline-heading > span {
+
+    color: #b12850;
+
+    font-size:
+        clamp(0.6rem, 1vw, 0.75rem);
+
+    letter-spacing:
+        0.18rem;
+
+    font-weight: 600;
+}
+
+
+.memory-intro h2,
+.polaroid-heading h2,
+.timeline-heading h2 {
+
+    margin-block:
+        0.8rem 1rem;
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size:
+        clamp(2.5rem, 5vw, 4.5rem);
+
+    line-height: 0.95;
+
+    font-weight: 400;
+
+    color: #641329;
+}
+
+
+.memory-intro h2 em,
+.polaroid-heading h2 em,
+.timeline-heading h2 em {
+
+    display: block;
+
+    color: #b12850;
+
+    font-style: italic;
+}
+
+
+.memory-intro p {
+
+    color: #76515e;
+
+    font-size:
+        clamp(0.8rem, 1.3vw, 0.95rem);
+
+    line-height: 1.9;
+}
+
+
+/* =========================================
+   MEMORY STORY
+========================================= */
+
+.memory-story {
+
+    width: min(88%, 70rem);
+
+    margin-inline: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    align-items: center;
+
+    gap:
+        clamp(3rem, 8vw, 8rem);
+
+    margin-bottom:
+        clamp(6rem, 12vw, 10rem);
+}
+
+
+.memory-story.reverse {
+
+    direction: rtl;
+}
+
+
+.memory-story.reverse > * {
+
+    direction: ltr;
+}
+
+
+.memory-image {
+
+    position: relative;
+
+    padding: 0.7rem;
+
+    background: #ffffff;
+
+    box-shadow:
+        0
+        1rem
+        3rem
+        rgba(80,20,40,0.12);
+
+    transform: rotate(-2deg);
+}
+
+
+.memory-story.reverse .memory-image {
+
+    transform: rotate(2deg);
+}
+
+
+.memory-image img {
+
+    aspect-ratio: 1 / 0.85;
+
+    object-fit: cover;
+}
+
+
+.memory-number {
+
+    position: absolute;
+
+    right: 1rem;
+
+    top: 1rem;
+
+    width:
+        clamp(2.5rem, 5vw, 3.5rem);
+
+    aspect-ratio: 1;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: #ffd166;
+
+    color: #641329;
+
+    font-family: Georgia, serif;
+}
+
+
+.memory-date {
+
+    color: #b12850;
+
+    font-size:
+        clamp(0.6rem, 1vw, 0.75rem);
+
+    letter-spacing:
+        0.18rem;
+
+    font-weight: 600;
+}
+
+
+.memory-story-text h2 {
+
+    margin-block:
+        0.8rem 1.3rem;
+
+    font-family: Georgia, serif;
+
+    font-size:
+        clamp(2.3rem, 5vw, 4rem);
+
+    line-height: 0.95;
+
+    font-weight: 400;
+
+    color: #641329;
+}
+
+
+.memory-story-text p {
+
+    color: #76515e;
+
+    font-size:
+        clamp(0.8rem, 1.3vw, 0.95rem);
+
+    line-height: 1.9;
+
+    margin-bottom: 1.5rem;
+}
+
+
+.memory-caption {
+
+    color: #a20b3d;
+
+    font-family: Georgia, serif;
+
+    font-size:
+        clamp(1rem, 2vw, 1.25rem);
+
+    font-style: italic;
+}
+
+
+/* =========================================
+   POLAROID SECTION
+========================================= */
+
+.polaroid-section {
+
+    padding:
+        clamp(5rem, 10vw, 8rem) 5%;
+
+    background: #fff0f3;
+}
+
+
+.polaroid-heading {
+
+    width: min(90%, 50rem);
+
+    margin-inline: auto;
+
+    text-align: center;
+
+    margin-bottom: 4rem;
+}
+
+
+.polaroid-grid {
+
+    width: min(90%, 65rem);
+
+    margin-inline: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap:
+        clamp(1rem, 3vw, 2rem);
+
+    align-items: center;
+}
+
+
+.polaroid-card {
+
+    padding:
+        0.7rem
+        0.7rem
+        1.5rem;
+
+    background: #ffffff;
+
+    box-shadow:
+        0
+        0.8rem
+        1.8rem
+        rgba(80,20,40,0.12);
+
+    transition:
+        transform 0.4s ease;
+}
+
+
+.polaroid-card:hover {
+
+    transform:
+        rotate(0deg)
+        translateY(-0.7rem)
+        scale(1.03);
+}
+
+
+.rotate-left {
+
+    transform: rotate(-5deg);
+}
+
+
+.rotate-right {
+
+    transform: rotate(4deg);
+}
+
+
+.rotate-left-small {
+
+    transform: rotate(-3deg);
+}
+
+
+.rotate-right-small {
+
+    transform: rotate(5deg);
+}
+
+
+.polaroid-img {
+
+    aspect-ratio: 1;
+
+    overflow: hidden;
+}
+
+
+.polaroid-img img {
+
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+.polaroid-card p {
+
+    padding-top: 0.8rem;
+
+    text-align: center;
+
+    color: #76515e;
+
+    font-family: Georgia, serif;
+
+    font-size:
+        clamp(0.8rem, 1.5vw, 1rem);
+
+    font-style: italic;
+}
+
+
+/* =========================================
+   TIMELINE
+========================================= */
+
+.memory-timeline {
+
+    width: min(90%, 60rem);
+
+    margin-inline: auto;
+
+    padding:
+        clamp(6rem, 12vw, 9rem)
+        0;
+}
+
+
+.timeline-heading {
+
+    text-align: center;
+
+    margin-bottom: 5rem;
+}
+
+
+.timeline {
+
+    position: relative;
+
+    max-width: 45rem;
+
+    margin-inline: auto;
+}
+
+
+.timeline::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 0;
+
+    bottom: 0;
+
+    width:
+        0.0625rem;
+
+    background: #e0b4c0;
+
+    transform:
+        translateX(-50%);
+}
+
+
+.timeline-item {
+
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    margin-bottom: 4rem;
+}
+
+
+.timeline-item:nth-child(even) {
+
+    direction: rtl;
+}
+
+
+.timeline-content {
+
+    padding:
+        0 2rem;
+}
+
+
+.timeline-item:nth-child(even)
+.timeline-content {
+
+    direction: ltr;
+
+    text-align: right;
+}
+
+
+.timeline-content span {
+
+    color: #b12850;
+
+    font-size:
+        0.65rem;
+
+    letter-spacing:
+        0.15rem;
+
+    font-weight: 600;
+}
+
+
+.timeline-content h3 {
+
+    margin-block:
+        0.4rem 0.6rem;
+
+    font-family: Georgia, serif;
+
+    font-size:
+        clamp(1.5rem, 3vw, 2rem);
+
+    font-weight: 400;
+}
+
+
+.timeline-content p {
+
+    color: #76515e;
+
+    font-size:
+        clamp(0.75rem, 1.2vw, 0.9rem);
+
+    line-height: 1.7;
+}
+
+
+.timeline-dot {
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 0;
+
+    transform:
+        translateX(-50%);
+
+    width:
+        clamp(2rem, 4vw, 2.8rem);
+
+    aspect-ratio: 1;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: #ffd166;
+
+    color: #8e0d38;
+
+    z-index: 2;
+}
+
+
+/* =========================================
+   ENDING
+========================================= */
+
+.memory-ending {
+
+    padding:
+        clamp(5rem, 10vw, 8rem) 5%;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #640621,
+            #8d103b
+        );
+
+    color: #ffffff;
+}
+
+
+.ending-heart {
+
+    color: #ffd166;
+
+    font-size:
+        clamp(2rem, 5vw, 3.5rem);
+
+    margin-bottom: 1rem;
+}
+
+
+.memory-ending h2 {
+
+    max-width: 50rem;
+
+    margin-inline: auto;
+
+    font-family: Georgia, serif;
+
+    font-size:
+        clamp(2.5rem, 5vw, 4.5rem);
+
+    line-height: 0.95;
+
+    font-weight: 400;
+}
+
+
+.memory-ending h2 span {
+
+    display: block;
+
+    color: #ffd166;
+
+    font-style: italic;
+}
+
+
+.memory-ending p {
+
+    margin-top: 1rem;
+
+    color:
+        rgba(255,255,255,0.7);
+
+    font-size:
+        clamp(0.8rem, 1.3vw, 0.95rem);
+}
+
+
+.memory-ending a {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 0.7rem;
+
+    margin-top: 2rem;
+
+    padding:
+        0.8rem 1.4rem;
+
+    border:
+        0.0625rem solid #ffd166;
+
+    border-radius: 50rem;
+
+    color: #ffd166;
+
+    font-size:
+        clamp(0.7rem, 1.2vw, 0.85rem);
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+
+.memory-ending a:hover {
+
+    background: #ffd166;
+
+    color: #641329;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.memory-footer {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 1rem;
+
+    padding:
+        1.3rem 5%;
+
+    background: #4e061f;
+
+    color:
+        rgba(255,255,255,0.6);
+
+    font-size:
+        clamp(0.65rem, 1vw, 0.8rem);
+}
+
+
+.memory-footer span {
+
+    color: #ff6685;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 43.75rem) {
+
+    .memory-nav {
+
+        flex-direction: column;
+
+        gap: 1rem;
+    }
+
+
+    .memory-links {
+
+        gap: 1rem;
+    }
+
+
+    .memory-story,
+    .memory-story.reverse {
+
+        width: 90%;
+
+        grid-template-columns: 1fr;
+
+        direction: ltr;
+
+        gap: 2.5rem;
+
+        margin-bottom: 6rem;
+    }
+
+
+    .memory-story.reverse > * {
+
+        direction: ltr;
+    }
+
+
+    .memory-story-text {
+
+        text-align: center;
+    }
+
+
+    .polaroid-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 1.5rem;
+    }
+
+
+    .timeline::before {
+
+        left: 1rem;
+
+        transform: none;
+    }
+
+
+    .timeline-item,
+    .timeline-item:nth-child(even) {
+
+        display: block;
+
+        direction: ltr;
+
+        padding-left: 3rem;
+    }
+
+
+    .timeline-content,
+    .timeline-item:nth-child(even)
+    .timeline-content {
+
+        padding: 0;
+
+        text-align: left;
+
+        direction: ltr;
+    }
+
+
+    .timeline-dot {
+
+        left: 0;
+
+        transform: none;
+    }
+
+
+    .memory-footer {
+
+        flex-direction: column;
+
+        align-items: center;
+
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width: 28.125rem) {
+
+    .memory-links {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .memory-hero {
+
+        min-height: 80vh;
+    }
+
+
+    .polaroid-grid {
+
+        grid-template-columns: 1fr;
+
+        max-width: 18rem;
+    }
+
+
+    .polaroid-card {
+
+        transform: rotate(-2deg);
+    }
+
+}

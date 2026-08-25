@@ -1,0 +1,958 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fffaf8;
+    color: #641329;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.gallery-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.gallery-nav {
+    width: min(90%, 75rem);
+    margin-inline: auto;
+
+    padding: 1.3rem 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gallery-logo {
+    color: #fff;
+    font-family: Georgia, serif;
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+}
+
+.gallery-logo span {
+    color: #ffd166;
+}
+
+.gallery-links {
+    display: flex;
+    gap: clamp(1rem, 3vw, 2rem);
+}
+
+.gallery-links a {
+    color: rgba(255,255,255,0.8);
+    font-size: clamp(0.7rem, 1.2vw, 0.85rem);
+}
+
+.gallery-links a:hover,
+.gallery-links .active {
+    color: #ffd166;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.gallery-hero {
+
+    min-height: min(85vh, 50rem);
+
+    display: grid;
+    place-items: center;
+
+    text-align: center;
+
+    padding: 7rem 5% 4rem;
+
+    background:
+        linear-gradient(
+            rgba(70, 5, 28, 0.72),
+            rgba(116, 8, 47, 0.75)
+        ),
+        url("images/family2.jpg")
+        center / cover no-repeat;
+}
+
+.gallery-hero-content {
+    color: #fff;
+}
+
+.gallery-hero-content > span {
+
+    color: #ffd166;
+
+    font-size:
+        clamp(0.6rem, 1vw, 0.75rem);
+
+    letter-spacing: 0.2rem;
+
+    font-weight: 600;
+}
+
+.gallery-hero h1 {
+
+    margin-block: 1rem;
+
+    font-family: Georgia, serif;
+
+    font-size:
+        clamp(3.5rem, 8vw, 7rem);
+
+    line-height: 0.85;
+
+    font-weight: 400;
+}
+
+.gallery-hero h1 strong {
+
+    display: block;
+
+    color: #ffd166;
+
+    font-weight: 400;
+
+    font-style: italic;
+}
+
+.gallery-hero p {
+
+    color: rgba(255,255,255,0.85);
+
+    font-size:
+        clamp(0.8rem, 1.5vw, 1rem);
+
+    line-height: 1.8;
+}
+
+.hero-heart {
+
+    margin-top: 2rem;
+
+    color: #ffd166;
+
+    font-size:
+        clamp(2rem, 5vw, 3rem);
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.gallery-intro {
+
+    width: min(90%, 48rem);
+
+    margin-inline: auto;
+
+    text-align: center;
+
+    padding:
+        clamp(5rem, 10vw, 8rem)
+        0;
+}
+
+.gallery-label,
+.section-title > span,
+.rakhi-content > span,
+.gallery-ending > span {
+
+    color: #b12850;
+
+    font-size:
+        clamp(0.6rem, 1vw, 0.75rem);
+
+    letter-spacing: 0.18rem;
+
+    font-weight: 600;
+}
+
+.gallery-intro h2,
+.section-title h2 {
+
+    margin-block: 0.8rem 1rem;
+
+    font-family: Georgia, serif;
+
+    font-size:
+        clamp(2.5rem, 5vw, 4.5rem);
+
+    line-height: 0.95;
+
+    font-weight: 400;
+}
+
+.gallery-intro h2 em,
+.section-title h2 em {
+
+    display: block;
+
+    color: #b12850;
+
+    font-style: italic;
+}
+
+.gallery-intro p {
+
+    color: #76515e;
+
+    font-size:
+        clamp(0.8rem, 1.3vw, 0.95rem);
+
+    line-height: 1.9;
+}
+
+
+/* =========================================
+   SIBLINGS
+========================================= */
+
+.siblings-section {
+
+    width: min(90%, 75rem);
+
+    margin-inline: auto;
+
+    padding-bottom:
+        clamp(5rem, 10vw, 8rem);
+}
+
+.section-title {
+
+    text-align: center;
+
+    margin-bottom:
+        clamp(3rem, 6vw, 5rem);
+}
+
+
+.siblings-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap:
+        clamp(1.5rem, 3vw, 2.5rem);
+}
+
+
+/* =========================================
+   SIBLING CARD
+========================================= */
+
+.sibling-card {
+
+    background: #fff;
+
+    border-radius: 1rem;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 0.8rem 2.5rem
+        rgba(80,20,40,0.08);
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.sibling-card:hover {
+
+    transform: translateY(-0.6rem);
+
+    box-shadow:
+        0 1.2rem 3rem
+        rgba(80,20,40,0.14);
+}
+
+
+.sibling-image {
+
+    position: relative;
+
+    aspect-ratio: 0.9;
+
+    overflow: hidden;
+}
+
+.sibling-image img {
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.6s ease;
+}
+
+.sibling-card:hover
+.sibling-image img {
+
+    transform: scale(1.06);
+}
+
+
+.sibling-number {
+
+    position: absolute;
+
+    top: 1rem;
+
+    right: 1rem;
+
+    width:
+        clamp(2.3rem, 5vw, 3rem);
+
+    aspect-ratio: 1;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: #ffd166;
+
+    color: #641329;
+
+    font-family: Georgia, serif;
+}
+
+
+.sibling-info {
+
+    padding:
+        clamp(1.2rem, 3vw, 1.7rem);
+
+    text-align: center;
+}
+
+
+.sibling-role {
+
+    color: #b12850;
+
+    font-size:
+        clamp(0.55rem, 1vw, 0.7rem);
+
+    letter-spacing: 0.15rem;
+
+    font-weight: 600;
+}
+
+
+.sibling-info h3 {
+
+    margin-block:
+        0.5rem 0.7rem;
+
+    font-family: Georgia, serif;
+
+    font-size:
+        clamp(1.5rem, 3vw, 2rem);
+
+    font-weight: 400;
+
+    color: #641329;
+}
+
+
+.sibling-info p {
+
+    color: #76515e;
+
+    font-size:
+        clamp(0.72rem, 1.2vw, 0.85rem);
+
+    line-height: 1.8;
+}
+
+
+.sibling-heart {
+
+    display: block;
+
+    margin-top: 1rem;
+
+    color: #d04468;
+
+    font-size: 1.2rem;
+}
+
+
+/* =========================================
+   FAMILY QUOTE
+========================================= */
+
+.family-quote {
+
+    padding:
+        clamp(5rem, 10vw, 8rem)
+        5%;
+
+    text-align: center;
+
+    background: #fff0f3;
+}
+
+
+.quote-mark {
+
+    color: #d99aaa;
+
+    font-family: Georgia, serif;
+
+    font-size:
+        clamp(4rem, 8vw, 6rem);
+
+    line-height: 0.5;
+}
+
+
+.family-quote h2 {
+
+    max-width: 55rem;
+
+    margin: 1rem auto;
+
+    font-family: Georgia, serif;
+
+    font-size:
+        clamp(2.3rem, 5vw, 4rem);
+
+    line-height: 1;
+
+    font-weight: 400;
+}
+
+
+.family-quote h2 span {
+
+    display: block;
+
+    color: #b12850;
+
+    font-style: italic;
+}
+
+
+.family-quote p {
+
+    max-width: 38rem;
+
+    margin-inline: auto;
+
+    color: #76515e;
+
+    font-size:
+        clamp(0.8rem, 1.3vw, 0.95rem);
+
+    line-height: 1.9;
+}
+
+
+.quote-heart {
+
+    margin-top: 1.5rem;
+
+    color: #d04468;
+
+    font-size: 1.5rem;
+}
+
+
+/* =========================================
+   PHOTO WALL
+========================================= */
+
+.photo-wall {
+
+    padding:
+        clamp(5rem, 10vw, 8rem) 5%;
+}
+
+
+.photo-grid {
+
+    width: min(100%, 75rem);
+
+    margin-inline: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    grid-auto-rows: 15rem;
+
+    gap: 1rem;
+}
+
+
+.photo-item {
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 0.7rem;
+}
+
+
+.photo-item.tall {
+
+    grid-row: span 2;
+}
+
+
+.photo-item.wide {
+
+    grid-column: span 2;
+}
+
+
+.photo-item img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.6s ease;
+}
+
+
+.photo-item:hover img {
+
+    transform: scale(1.08);
+}
+
+
+.photo-overlay {
+
+    position: absolute;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: 0;
+
+    padding: 2rem 1rem 1rem;
+
+    background:
+        linear-gradient(
+            transparent,
+            rgba(60,5,25,0.75)
+        );
+
+    color: #fff;
+
+    font-family: Georgia, serif;
+
+    font-size:
+        clamp(0.8rem, 1.5vw, 1rem);
+
+    opacity: 0;
+
+    transform:
+        translateY(0.5rem);
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.photo-item:hover .photo-overlay {
+
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   RAKHI
+========================================= */
+
+.rakhi-gallery {
+
+    width: min(90%, 70rem);
+
+    margin-inline: auto;
+
+    padding:
+        clamp(5rem, 10vw, 8rem) 0;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:
+        clamp(3rem, 7vw, 7rem);
+
+    align-items: center;
+}
+
+
+.rakhi-content h2 {
+
+    margin-block:
+        0.8rem 1rem;
+
+    font-family: Georgia, serif;
+
+    font-size:
+        clamp(2.5rem, 5vw, 4.5rem);
+
+    line-height: 0.9;
+
+    font-weight: 400;
+}
+
+
+.rakhi-content h2 em {
+
+    display: block;
+
+    color: #b12850;
+
+    font-style: italic;
+}
+
+
+.rakhi-content p {
+
+    color: #76515e;
+
+    font-size:
+        clamp(0.8rem, 1.3vw, 0.95rem);
+
+    line-height: 1.9;
+}
+
+
+.rakhi-photo {
+
+    padding: 0.7rem;
+
+    background: #fff;
+
+    box-shadow:
+        0 1rem 3rem
+        rgba(80,20,40,0.12);
+
+    transform: rotate(2deg);
+}
+
+
+.rakhi-photo img {
+
+    aspect-ratio: 1 / 0.8;
+
+    object-fit: cover;
+}
+
+
+/* =========================================
+   ENDING
+========================================= */
+
+.gallery-ending {
+
+    padding:
+        clamp(5rem, 10vw, 8rem) 5%;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #640621,
+            #8d103b
+        );
+
+    color: #fff;
+}
+
+
+.gallery-ending > span {
+
+    color: #ffd166;
+}
+
+
+.gallery-ending h2 {
+
+    margin-block:
+        1rem;
+
+    font-family: Georgia, serif;
+
+    font-size:
+        clamp(2.7rem, 6vw, 5rem);
+
+    font-weight: 400;
+
+    line-height: 0.9;
+}
+
+
+.gallery-ending h2 em {
+
+    display: block;
+
+    color: #ffd166;
+
+    font-style: italic;
+}
+
+
+.gallery-ending p {
+
+    max-width: 35rem;
+
+    margin: 1rem auto;
+
+    color:
+        rgba(255,255,255,0.7);
+
+    font-size:
+        clamp(0.8rem, 1.3vw, 0.95rem);
+
+    line-height: 1.8;
+}
+
+
+.gallery-ending div {
+
+    margin-top: 1.5rem;
+
+    color: #ffd166;
+
+    font-size: 1.3rem;
+
+    letter-spacing: 0.5rem;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.gallery-footer {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 1rem;
+
+    padding:
+        1.3rem 5%;
+
+    background: #4e061f;
+
+    color:
+        rgba(255,255,255,0.6);
+
+    font-size:
+        clamp(0.65rem, 1vw, 0.8rem);
+}
+
+
+.gallery-footer span {
+
+    color: #ff6685;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 56.25rem) {
+
+    .siblings-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .photo-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        grid-auto-rows: 14rem;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 43.75rem) {
+
+    .gallery-nav {
+
+        flex-direction: column;
+
+        gap: 1rem;
+    }
+
+
+    .gallery-links {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 0.8rem 1.2rem;
+    }
+
+
+    .siblings-grid {
+
+        grid-template-columns: 1fr;
+
+        max-width: 25rem;
+
+        margin-inline: auto;
+    }
+
+
+    .photo-grid {
+
+        grid-template-columns:
+            1fr 1fr;
+
+        grid-auto-rows: 10rem;
+    }
+
+
+    .photo-item.tall {
+
+        grid-row: span 2;
+    }
+
+
+    .photo-item.wide {
+
+        grid-column: span 2;
+    }
+
+
+    .photo-overlay {
+
+        opacity: 1;
+
+        transform: none;
+
+        padding-top: 2rem;
+    }
+
+
+    .rakhi-gallery {
+
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+        gap: 2.5rem;
+    }
+
+
+    .rakhi-photo {
+
+        width: min(100%, 30rem);
+
+        margin-inline: auto;
+    }
+
+
+    .gallery-footer {
+
+        flex-direction: column;
+
+        align-items: center;
+
+        text-align: center;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 28.125rem) {
+
+    .gallery-hero {
+
+        min-height: 75vh;
+    }
+
+
+    .photo-grid {
+
+        grid-template-columns: 1fr;
+
+        grid-auto-rows: 15rem;
+    }
+
+
+    .photo-item.tall,
+    .photo-item.wide {
+
+        grid-column: auto;
+
+        grid-row: auto;
+    }
+
+
+    .photo-item.tall {
+
+        grid-row: span 1;
+    }
+
+}
